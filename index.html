@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div id="nav">
+        <img src="icons8-logo.svg">
+        <div id="nav-part2">
+            <h4>Home</h4>
+            <h4>Work</h4>
+            <h4>Studio</h4>
+            <h4>Contact</h4>
+        </div>
+        <div id="nav-part3">
+            <div id="circle">
+
+            </div>
+        </div>
+
+    </div>
+    <div id="purple"></div>
+    <div class="main">
+        <div class="page1">
+
+            <h1>Digitally crafted</h1>
+            <h2>tech experiences</h2>
+            <video autoplay muted loop src="GITEX.mp4"></video>
+        </div>
+        <div class="page2">
+            <h1>We are Gitex Expo</h1>
+            <div class="page2-container">
+                <div class="page2-left">
+                    <h2>
+                        GITEX’s claim as the largest and best tech show unequivocally confirmed
+                    </h2>
+                </div>
+                <div class="page2-right">
+                    <p>
+                        The world witnessed AI's full potential and strength, being harnessed by
+                        the startups in Expand North Star's new venue Dubai Harbour, to the world's
+                        largest companies utilizing AI today at GITEX GLOBAL. Now we look forward to the future,
+                        building upon the global momentum of co-located show GITEX AFRICA, 15 - 17 May 2024, and
+                        the mega announcement of GITEX EUROPE, 21 - 23 May 2025 - connecting global tech communities.
+                    </p>
+                    <button>About Us</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="diagonaltags">
+            <div class="tagline-container">
+                <marquee id="tagline-marquee" behavior="scroll" direction="left" scrollamount="20"
+                    onfinish="resetMarquee()">
+                    <span class="tagline">GITEX 2024 EXHIBITION IN DUBAI. LET'S DREAM BIG.GITEX 2024 EXHIBITION IN
+                        DUBAI. LET'S DREAM BIG</span>
+                </marquee>
+            </div>
+        </div>
+
+        <div class="page3">
+            <h1>Gitex Themes</h1>
+            <div class="page3-part1">
+                <img src="https://www.gitex.com/contents/Theme-3/images/ai/ai-img01.jpeg" alt="">
+                <video autoplay muted loop src="GITEX-GLOBAL.mp4"></video>
+            </div>
+            <div class="page3-part2">
+                <video autoplay muted loop src="LEAP.mp4"></video>
+                <img src="https://www.gitex.com/contents/Theme-3/images/devslam/devslam01.jpg" alt="">
+            </div>
+        </div>
+        <div class="page4">
+            <div class="elem">
+                <img src="Strategy1.jfif">
+                <div class="text-div">
+                    <h1>Strategy</h1>
+                    <h1>Strategy</h1>
+                </div>
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDcXxlj7jPJjzSDlRpRRjs1rdh15ybtOPErw&usqp=CAU">
+            </div>
+            <div class="elem">
+                <img src="AI1.jfif">
+                <div class="text-div">
+                    <h1>Theme</h1>
+                    <h1>Theme</h1>
+                </div>
+                <img src="AI2.jfif">
+            </div>
+            <div class="elem">
+                <img src="EXHIBITION1.jfif">
+                <div class="text-div">
+                    <h1>Exhibition</h1>
+                    <h1>Exhibition</h1>
+                </div>
+                <img src="EXHIBITION2.jfif">
+            </div>
+        </div>
+
+        <div class="page5">
+            <h2>Mention Clients</h2>
+            <div class="box"
+                data-image="https://images.unsplash.com/photo-1698513924628-4f6e0e4c00f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDF8Ym84alFLVGFFMFl8fGVufDB8fHx8fA%3D%3D">
+                <h3>Tonomous</h3>
+                <h4>2023 Partener for Gitex Dubai</h4>
+            </div>
+            <div class="box"
+                data-image="https://images.unsplash.com/photo-1688232543149-5602b136ba11?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDExfGJvOGpRS1RhRTBZfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
+                <h3>Huwavei</h3>
+                <h4>2023 Partener for Gitex Dubai</h4>
+            </div>
+            <div class="box"
+                data-image="https://plus.unsplash.com/premium_photo-1671751034132-cc7d186fec40?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZXxlbnwwfHwwfHx8MA%3D%3D">
+                <h3>Salesforce</h3>
+                <h4>2023 Partener for Gitex Dubai</h4>
+            </div>
+            <div class="box"
+                data-image="https://images.unsplash.com/photo-1496096265110-f83ad7f96608?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2V8ZW58MHx8MHx8fDA%3D">
+                <h3>Microsoft</h3>
+                <h4>2023 Partener for Gitex Dubai</h4>
+            </div>
+            <div class="box"
+                data-image="https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2V8ZW58MHx8MHx8fDA%3D">
+                <h3>Tedxtalk</h3>
+                <h4>2023 Partener for Gitex Dubai</h4>
+            </div>
+            <div class="box"
+                data-image="https://images.unsplash.com/photo-1589149098258-3e9102cd63d3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2V8ZW58MHx8MHx8fDA%3D">
+                <h3>Manage Engine</h3>
+                <h4>2023 Partener for Gitex Dubai</h4>
+            </div>
+        </div>
+        <div class="page6">
+            <h2>Start Registeration here</h2>
+            <div class="circle">
+                <h3 class="text">Registeration</h3>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="lastdiv">
+                <div class="footer-box">
+                    <h3>Home</h3>
+                    <h3>-*-</h3>
+                </div>
+                <div class="footer-box">
+                    <h3>Work</h3>
+                    <h3>-*-</h3>
+                </div>
+                <div class="footer-box">
+                    <h3>About</h3>
+                    <h3>-*-</h3>
+                </div>
+            </div>
+            <div class="footerside2">
+                <h3>Exhibitor List</h3>
+                <h3>Venue Map</h3>
+                <h3>Travel Guide</h3>
+
+            </div>
+        </div>
+        <footer>
+           <div class="copyright">
+            <h4>2023@All Copyrights are reserved.</h4>
+           </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

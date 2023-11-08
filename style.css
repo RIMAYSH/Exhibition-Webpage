@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: PP mori;
+    color: white;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/*-------------Cursor-------------*/
+.cursor {
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    position: fixed;
+    background-color: #EDBFFF;
+    z-index: 8;
+    transition: background-image ease 0.5s;
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode: difference;
+    align-items: center;
+    font-family: PP mori;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    transition: backgroung-image ease 0.5s;
+    background-position: center;
+    background-size: cover;
+}
+
+.expanded {
+    width: 120px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+/*-------------Main-------------*/
+.main {
+    background-color: #0F0D0D;
+    cursor: none;
+}
+
+.page1 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding-top: 12vw;
+}
+
+/*-------------Navbar-------------*/
+#nav {
+    width: 100%;
+    height: 65px;
+    /*background-color: red;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    position: fixed;
+    mix-blend-mode: difference;
+    z-index: 102;
+}
+
+#nav-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#nav #circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+#nav h4 {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#nav h4:nth-child(1) {
+    border-bottom: 1.5px solid #fff;
+}
+
+/*-------------Hero Section-------------*/
+.page1 h1 {
+    font-size: 8vw;
+    font-weight: 300;
+    font-family: PP mori;
+    margin-top: 12vw;
+    margin-left: 10vw;
+}
+
+.page1 h2 {
+    font-size: 7vw;
+    font-weight: 300;
+    font-family: PP mori;
+    margin-left: 26vw;
+}
+
+.page1 video {
+    width: 60%;
+    position: relative;
+    margin-top: 10vw;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/*-------------Page 2-------------*/
+.page2 {
+    min-height: 80vh;
+    width: 100%;
+    padding: 100px 7vw;
+    border-bottom: 2px solid #a5a5a5;
+    position: relative;
+    z-index: 9;
+}
+
+.page2 h1 {
+    font-size: 7vw;
+    font-weight: 400;
+    color: #111;
+    font-family: PP mori;
+}
+
+.page2-container {
+    height: 60vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page2-left {
+
+    width: 40%;
+}
+
+.page2-right {
+
+    width: 25%;
+}
+
+.page2-left h2 {
+    font-size: 4vw;
+    font-weight: 300;
+    font-family: PP mori;
+    text-transform: uppercase;
+    color: #111;
+    line-height: 4vw;
+}
+
+.page2-right p {
+    font-size: 1vw;
+    font-family: PP mori;
+    font-weight: 170;
+    line-height: 1.5;
+    color: #111;
+}
+
+.page2-right button {
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    padding: 4px 0;
+    background-color: #EDBFFF;
+    color: #111;
+    margin-top: 20PX;
+}
+
+/*-------------Page 3-------------*/
+.page3 {
+    min-height: 180vh;
+    width: 100%;
+    position: relative;
+    padding-top: 100px;
+    border-bottom: 2px solid #a5a5a5;
+    position: relative;
+    z-index: 9;
+    margin-top: 110px;
+}
+
+.page3 h1 {
+    font-size: 6.5vw;
+    font-weight: 300;
+    color: #111;
+    margin-left: 100px;
+}
+
+.page3-part1 video {
+    width: 80vh;
+}
+
+.page3-part1 img {
+    margin-top: 160px;
+}
+
+.page3-part1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.page3-part2 video {
+    margin-top: 160px;
+    width: 80vh;
+}
+
+.page3-part2 img {
+    margin-top: 260px;
+}
+
+.page3-part2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/*-------------Page 4-------------*/
+.page4 {
+    min-height: 70vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding: 140px 100PX;
+}
+
+.text-div {
+    height: 120px;
+    overflow: hidden;
+}
+
+.elem h1 {
+    font-size: 6.3vw;
+    font-weight: 300;
+    font-family: PP mori;
+    transition: all ease-out 0.5s;
+}
+
+.elem:hover h1 {
+    transform: translateY(-100%);
+    color: #EDBFFF;
+}
+
+.elem img {
+    position: absolute;
+    opacity: 0;
+    transition: all ease-out 0.5s;
+    transform: translateY(10%) rotate(2deg);
+}
+
+.elem img:nth-child(1) {
+    left: 16%;
+}
+
+.elem img:nth-child(3) {
+    right: 17%;
+}
+
+.elem {
+    margin-bottom: 10PX;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.elem:hover img {
+    opacity: 1;
+    transform: translateY(0) rotate(0);
+}
+
+/*-------------Page 5-------------*/
+.page5 {
+    min-height: 50vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    z-index: 9;
+    padding: 140px 100px;
+}
+
+.page5 h2 {
+    font-family: PP mori;
+    font-size: 4vw;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.page5 h3{
+    font-family: PP mori;
+    font-size: 2vw;
+    font-weight: 400;
+}
+
+.box {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    height: 100px;
+    padding: 0 20px;
+    border-top: 1.5px solid #dadada;
+}
+
+.box:nth-last-child(1) {
+    border-bottom: 1.5px solid #dadada;
+}
+/*-------------Page 6-------------*/
+.page6{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 60px;
+}
+.page6 h2{
+    font-family: PP mori;
+    font-weight: 400;
+    font-size: 4.5vw;
+}
+.circle {
+    background-color: #EDBFFF;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    margin-right: 80px;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    perspective: 1000px;
+}
+.circle:hover{
+    transform: rotateY(180deg)
+}
+.text {
+    transition: transform 0.3s;
+}
+
+.circle:hover .text {
+    transform: rotateY(180deg);
+}
+
+.circle h3 {
+    font-family: PP mori;
+    font-size: 1.5vw;
+    font-weight: 300;
+    color: #111;
+    padding-left: 20px;
+    padding-top: 110px;
+}
+/*-------------Footer-------------*/
+
+/*-------------tagline-------------*/
+
+.tagline-container {
+    padding: 10px;
+    position: absolute;
+    white-space: nowrap;
+    /* Prevent tagline from wrapping */
+    overflow: hidden;
+    /* Hide tagline overflow content */
+    width: 100%;
+    /* Full width */
+
+}
+
+.tagline {
+    color: #111;
+    font-family: PP mori;
+    font-size: 4.5vw;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.footer {
+    min-height: 50vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 140px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.footer-box h3 {
+    font-family: PP mori;
+    font-size: 2vw;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.footer-box h3:hover {
+    color: #EDBFFF;
+}
+.footer-box {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    height: 100px;
+    padding: 0 20px;
+    padding-top: 59px;
+    border-top: 1.5px solid #dadada;
+}
+
+.footer-box:nth-last-child(1) {
+    border-bottom: 1.5px solid #dadada;
+}
+
+.lastdiv {
+    width: 60%;
+}
+
+.footerside2 {
+    padding: 60px;
+
+}
+
+.footerside2 h3 {
+    font-family: PP mori;
+    font-size: 2vw;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+footer{
+    min-height: 40vh;
+    background-color: #111;
+}
+.copyright{
+    border-top: 1.5px solid #dadada;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 40px;
+}
+.copyright h4{
+    font-family: PP mori;
+    font-size: 1vw;
+    font-weight: 200;
+}
+
